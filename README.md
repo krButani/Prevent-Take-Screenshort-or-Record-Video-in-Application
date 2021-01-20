@@ -1,6 +1,6 @@
 # Prevent Taking Screenshot or Record Video in Application - Flutter
 
-# Import Package link given below
+### Import Package link given below
 
 - [Flutter Window Manager Package](https://pub.dev/packages/flutter_windowmanager)
 
@@ -9,7 +9,7 @@
 - Flutter Window Manager work only Android if you prevent also in iso refer below link
 - [In IOS - Prevent taking Screenshot](https://medium.com/nerd-for-tech/prevent-screenshot-and-video-recording-in-flutter-93839325d66c)
 
-# Write Code inside the Screen Widget
+### Write Code inside the Screen Widget
 
 ```
 Future<void> secureScreen() async {
