@@ -1,16 +1,28 @@
-# stoptakescreenshot
+# Prevent Taking Screenshot or Record Video in Application - Flutter
 
-A new Flutter project.
+# Import Package link given below
 
-## Getting Started
+- [Flutter Window Manager Package](https://pub.dev/packages/flutter_windowmanager)
 
-This project is a starting point for a Flutter application.
+`flutter_windowmanager: ^0.0.2`
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter Window Manager work only Android if you prevent also in iso refer below link
+- [In IOS - Prevent taking Screenshot](https://medium.com/nerd-for-tech/prevent-screenshot-and-video-recording-in-flutter-93839325d66c)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+# Write Code inside the Screen Widget
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+Future<void> secureScreen() async {
+    await FlutterWindowManager.addFlags(FlutterWindowManager.FLAG_SECURE);
+}
+
+@override
+void initState() {
+    secureScreen();
+    // TODO: implement initState
+    super.initState();
+}
+
+```
+
+
